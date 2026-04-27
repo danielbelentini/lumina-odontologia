@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0d0d0d;
+    color: #f5f0e8;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-dark font-sans font-medium text-xs tracking-widest uppercase px-8 py-4 transition-all duration-300 hover:bg-gold-light active:scale-95 cursor-pointer border-0 inline-block;
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-cream border border-cream/25 font-sans font-light text-xs tracking-widest uppercase px-8 py-4 transition-all duration-300 hover:border-gold hover:text-gold cursor-pointer inline-block;
+  }
+
+  .section-tag {
+    @apply font-sans text-gold text-xs tracking-[0.3em] uppercase mb-3 block;
+  }
+
+  .section-title {
+    @apply font-serif font-light text-white leading-tight;
+  }
+
+  .section-title em {
+    @apply text-gold not-italic;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}
